@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>777Funds - Democratizing The Digital Economy</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #000428, #004e92);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header, footer {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 0 15px cyan;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 15px cyan;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .chart-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #00c6ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 10px cyan;
+        }
+        .btn:hover {
+            background: #0072ff;
+            box-shadow: 0 0 20px cyan;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        777Funds - Democratizing The Digital Economy
+    </header>
+    
+    <section>
+        <h2>Welcome to 777Funds</h2>
+        <p>Unlock passive income in the digital economy. Earn from YouTube channels, blogs, and digital assets without effort.</p>
+        <a href="https://linkedin.com/company/777Funds" class="btn" target="_blank">Get Started</a>
+    </section>
+    
+    <section>
+        <h2>The Problem & Our Solution</h2>
+        <p><strong>The Problem:</strong> Inflation is rapidly eroding wealth. Traditional investments often fail to keep up, and many struggle to build passive income due to time, expertise, or capital constraints.</p>
+        <p><strong>Our Solution:</strong> 777Funds provides a gateway to the digital economy, offering fully managed investments in high-yield digital assets with predictable returns.</p>
+    </section>
+    
+    <section>
+        <h2>Market Opportunity</h2>
+        <p>The digital real estate market is projected to surpass $500B by 2026, with YouTube ad revenue alone exceeding $300B annually.</p>
+    </section>
+    
+    <section>
+        <h2>Investment Growth Projection</h2>
+        <div class="chart-container">
+            <canvas id="investmentChart"></canvas>
+        </div>
+        <script>
+            var ctx = document.getElementById('investmentChart').getContext('2d');
+            var investmentChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['2025', '2026', '2027', '2028', '2029'],
+                    datasets: [{
+                        label: 'Projected Revenue ($M)',
+                        data: [0.5, 1.2, 2.5, 5.0, 10.0],
+                        borderColor: 'cyan',
+                        borderWidth: 2,
+                        fill: true,
+                        backgroundColor: 'rgba(0, 255, 255, 0.2)'
+                    }]
+                },
+                options: { responsive: true }
+            });
+        </script>
+    </section>
+    
+    <section>
+        <h2>Coming Soon: 777Funds DeFi Pool</h2>
+        <p>Invest in our upcoming DeFi pool on Binance Smart Chain (BSC) and earn from real digital assets through decentralized finance.</p>
+    </section>
+    
+    <section>
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:777funds.io@gmail.com" style="color: cyan;">777funds.io@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/company/777Funds" style="color: cyan;" target="_blank">777Funds</a></p>
+    </section>
+    
+    <footer>
+        &copy; 2025 777Funds | All Rights Reserved
+    </footer>
+</body>
+</html>
